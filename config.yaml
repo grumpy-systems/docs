@@ -1,0 +1,4 @@
+baseURL: "https://docs.grumpy.systems/"
+languageCode: "en-us"
+title: "Docs - Grumpy"
+theme: "whisper"
