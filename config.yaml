@@ -3,16 +3,20 @@ languageCode: "en-us"
 title: "Docs - Grumpy"
 theme: "learn"
 
-outputs:
-  - HTML
-  - RSS
-  - JSON
+# outputs:
+#   - HTML
+#   - RSS
+#   - JSON
+
+params:
+  disableLandingPageButton: true
+  disableNextPrev: true
+  custom_css:
+    - "css/fixes.css"
+  customMermaidURL: "js/mermaid.min.js"
 
 menu:
-  main:
-    - name: Main Site
-      url: "https://grumpy.systems"
+  shortcuts:
+    - name: '<i class="fas fa-home">Main Site</i>'
       weight: 1
-    - name: Minecraft Docker
-      url: "/minecraft"
-      weight: 10
+      url: "https://grumpy.systems"
