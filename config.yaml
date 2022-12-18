@@ -1,4 +1,18 @@
 baseURL: "https://docs.grumpy.systems/"
 languageCode: "en-us"
 title: "Docs - Grumpy"
-theme: "whisper"
+theme: "learn"
+
+outputs:
+  - HTML
+  - RSS
+  - JSON
+
+menu:
+  main:
+    - name: Main Site
+      url: "https://grumpy.systems"
+      weight: 1
+    - name: Minecraft Docker
+      url: "/minecraft"
+      weight: 10
