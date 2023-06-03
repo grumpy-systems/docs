@@ -14,9 +14,10 @@ frequently.  These tag chains are created:
 * `paper-xx` - This always points to the most recent build of paper for the
   specified Minecraft version.
 * `paper-xx-yy` - This points to a specific PaperMC build number.
-* `paper-xx-yy-u0` - This points to a specific build of the PaperMC container.
 
 `latest` and `paper-xx` are the recommended tags to use.
+
+`paper-xx-yy-u0` points to a specific build of the PaperMC container.
 
 {{% notice info %}}
 

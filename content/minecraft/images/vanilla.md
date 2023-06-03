@@ -12,18 +12,21 @@ This image has a few tag chains that are maintained:
 
 * `latest` always points to the highest Minecraft Version.
 * `vanilla-xx` always points to the most recent build of a specific Minecraft Version.
-* `vanilla-xx-u0` always points to a static build of a Minecraft version.
 
 Pointing to `latest` will ensure that your server is always up to date.
 Eventually, a major version tag will likely come along, so you can hold on
 `1.19` and still get patches without jumping to new versions.
 
+`vanilla-xx-u0` always points to a static build of a Minecraft version.
+
 {{% notice info %}}
 
 Using a build _other than_ `latest` can cause you to fall behind, including
-security updates that Mojang releases.  Since they increment the Minecraft
-version number, holding on `vanilla-1.19` will prevent you from getting any
-security updates that may come.
+security updates that Mojang releases.  Mojang (unlike the other container
+versions) _will_ update the Minecraft Server version on security patches, so
+locking to a specific version will skip these updates.  If you opt to use a
+specific version, it's up to you to check for patches to Minecraft and update
+the image.
 
 {{% /notice %}}
 

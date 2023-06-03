@@ -63,9 +63,12 @@ services:
 
 This creates a few things:
 
-* Sets the User to a more-safe option
-* Sets a data directory for the map and configuration
-* Sets a Java memory limit
+* Sets the User to a more-safe option.  Running everything in the world as Root
+  raises potential issues.
+* Sets a data directory for the map and configuration.  This directory is not
+  removed and can be backed up, so your world can survive reboots or server
+  crashes.
+* Sets a Java memory limit.
 
 Once created, then run `docker-compose up` to launch your new server.
 
@@ -73,9 +76,20 @@ Once created, then run `docker-compose up` to launch your new server.
 
 The server mounts a directory that will contain your map file and other
 configuration files.  You'll probably want to bind this directory to a local
-directory on your machine so you can view and backup the files as needed.
+directory on your machine so you can view and backup the files as needed.  That
+file is a normal Minecraft Server directory, so you can customize things as
+desired.
 
-Wherever you mount this file, it will be a normal Minecraft server directory
-that you can modify as you desire.  Keep in mind that overwriting the `jar`
-files provided will cause them to be overwritten by the container on its next
-startup.
+{{% notice warning %}}
+
+The JAR file for server is overwritten as part of the container startup.  If you
+overwrite or update that file, it will be overwritten by the default file the
+next container boot.
+
+{{% /notice %}}
+
+## Lifecycles
+
+If you're running these for a while, I go over my [lifecycle
+policies](/minecraft/lifecycle/) as well.
+ 

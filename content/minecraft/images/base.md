@@ -13,9 +13,11 @@ This image has a few tag chains that are maintained:
 
 * `latest` always points to the highest JRE version.
 * `java-xx` always points to the latest revision with that JRE version.
-* `java-xx-u0` always points to a static build of a JRE image.
 
-Pointing to `latest` or `java-xx` will ensure that your JRE is always up to date.
+Pointing to `latest` or `java-xx` will ensure that your JRE is always up to
+date.
+
+`java-xx-u0` always points to a static build of a JRE image.
 
 {{% notice info %}}
 

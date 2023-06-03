@@ -16,9 +16,12 @@ I found other containers that did a similar thing, but they all were lacking a
 few key things:
 
 * Build Immutability - Most of these just downloaded the Minecraft Jar files on
-  the fly, so having things locked to a specific version was not possible.
+  the fly, so having things locked to a specific version was not possible.  I
+  went a step further and even have immutability for specific OS patch versions
+  too, in case that causes some issue.
 * Lack of updates - It was up to the container's author to update things, and
-  there was usually some delay.
+  there was usually some delay.  These containers update daily for any new
+  Minecraft versions, and weekly for OS patches.
 * No shared images - When an update is released, you're downloading a large
   image over and over, which is just inefficient.
 
